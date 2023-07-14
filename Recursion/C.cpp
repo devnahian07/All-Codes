@@ -4,8 +4,17 @@
 
 using namespace std;
 
-bool rec(int x){
-    
+int lnm(int x){
+    while((x%10)==0) x/=10;
+    return x;
+}
+
+bool rec(int s){
+    if(s==1) return true;
+    if(s<1) return false;
+    if(lnm(s)==1) rec(s/10);
+    else if(lnm(s)==2 || (lnm(s)%4==0)) rec(s/20);
+    else return false;
 }
 
 signed main(){
