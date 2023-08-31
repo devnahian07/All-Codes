@@ -5,6 +5,6 @@
 using namespace std;
 
 int main(){
-    cout << INT_MAX << "\n";
+    cout << (0%2) << "\n";
     return 0;
 }
