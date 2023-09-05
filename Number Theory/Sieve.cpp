@@ -20,10 +20,13 @@ void sieve(){
 }
 
 signed main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    sieve();
-    for(auto x: primes) cout << x << " ";
-    cout << "\n";
+    // ios_base::sync_with_stdio(false);
+    // cin.tie(NULL);
+    // sieve();
+    // for(auto x: primes) cout << x << " ";
+    // cout << "\n";
+    int n;
+    cin >> n;
+    cout << status[n] << "\n";
     return 0;
 }

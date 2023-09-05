@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 
-//#define int long long
+#define int long long
 
 using namespace std;
 
-int main(){
-    cout << (0%2) << "\n";
+signed main(){
+    cout << (int)('a') << " " << (int)('z') << "\n";
     return 0;
 }
