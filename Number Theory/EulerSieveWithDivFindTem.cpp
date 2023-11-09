@@ -2,7 +2,10 @@
 
 using namespace std;
 
-int status[1000001];
+#define int long long // must
+
+int status[1000001]; // can increase depending on situation within range
+
 void siv() {
     int n = 1000000;
     status[1] = 1;
@@ -15,7 +18,9 @@ void siv() {
         }
     }
 }
+
 vector<pair<int, int>> pf;
+
 void prime_factorize(int n) {
     int cnt = 0;
     int prev = -1;
@@ -31,7 +36,9 @@ void prime_factorize(int n) {
     }
     if(prev != -1) pf.push_back({prev, cnt});
 }
+
 vector<int> divs[1000001];
+
 void find_div(int mul, int pos, int n) {
     if(pos == (int)pf.size()) {
         divs[n].push_back(mul);
@@ -49,4 +56,12 @@ void create_divs(int curr) {
     find_div(1, 0, curr);
     sort(divs[curr].begin(), divs[curr].end());
     pf.clear();
+}
+
+signed main(){
+    siv(); // first call siv must
+    create_divs(50000); //  to print divisors of the number, here -> 50000
+    vector<int> nums = divs[50000]; // to access the divisors from the divs 2-D vector
+    for(auto x: nums) cout << x << " ";
+    cout << "\n";
 }
