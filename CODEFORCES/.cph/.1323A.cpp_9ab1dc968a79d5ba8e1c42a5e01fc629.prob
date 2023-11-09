@@ -1,0 +1,1 @@
+{"name":"Local: 1323A","url":"/home/elliot/Documents/EAC/CP Revision/CODEFORCES/1323A.cpp","tests":[{"id":1697699923369,"input":"3\n3\n1 4 3\n1\n15\n2\n3 5","output":"1\n2\n-1\n2\n1 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/elliot/Documents/EAC/CP Revision/CODEFORCES/1323A.cpp","group":"local","local":true}

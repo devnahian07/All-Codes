@@ -7,9 +7,9 @@ using namespace std;
 signed main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    char ar[5];
-    for(int i = 0; i < 5; i++) cin >> ar[i];
-    for(int i = 0; i < 5; i++) cout << ar[i] << " ";
-    cout << "\n";
+    int n, m;
+    cin >> n >> m;
+    if((m-1) >= 1) cout << (m-1) << "\n";
+    else cout << (m+1) << "\n";
     return 0;
 }
